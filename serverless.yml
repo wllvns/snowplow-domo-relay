@@ -8,7 +8,7 @@ package:
   artifact: target/scala-2.12/hello.jar
 
 functions:
-  hello:
+  domo-relay:
     handler: domo.LambdaHandler
   environment:
     DOMO_URI: https://webhooks.domo.com/streams/v1/data/eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIzYzc5MzE0ZmVkNDc0NzUxODkxYzVhN2RhN2FhZjAxZjpwcm9kNjptYWppbWUtd3MtcGFydG5lciJ9.aV77ESyVvLx0NsaFLPDGM_odBV9iHCilb7jh8xEb2ro
