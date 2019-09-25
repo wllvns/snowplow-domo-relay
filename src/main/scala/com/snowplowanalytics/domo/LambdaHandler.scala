@@ -27,8 +27,8 @@ class LambdaHandler {
   import LambdaHandler._
 
   val indicativeUri: String = getConfig[String]("DOMO_URI", Some(Relay.defaultIndicativeUri))(s => s)
-/*  val apiKey: String        = getConfig[String]("DOMO_API_KEY")(s                               => s)
-*/  val unusedEvents
+  val apiKey: String        = getConfig[String]("DOMO_API_KEY")(s                               => s)
+  val unusedEvents
     : List[String] = getConfig[List[String]]("UNUSED_EVENTS", Some(Filters.unusedEvents))(strToList(_)) // eg, `UNUSED_EVENTS=page_ping,app_heartbeat`
   val unusedAtomicFields: List[String] = getConfig[List[String]](
     "UNUSED_ATOMIC_FIELDS",
