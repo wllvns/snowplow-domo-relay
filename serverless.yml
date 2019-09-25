@@ -5,7 +5,7 @@ provider:
   runtime: java8
 
 package:
-  artifact: target/scala-2.12/hello.jar
+  artifact: target/scala-2.12/domo-relay.jar
 
 functions:
   domo-relay:

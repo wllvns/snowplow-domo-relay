@@ -13,7 +13,7 @@
 lazy val root = project
   .in(file("."))
   .settings(
-    name := "indicative-relay",
+    name := "domo-relay",
     organization := "com.snowplowanalytics",
     version := "0.4.0",
     description := "A relay transforming Snowplow enriched events into Indicative format",
